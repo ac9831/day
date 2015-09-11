@@ -1,11 +1,77 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
-    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/default_bg"
+    >
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:orientation="vertical" >
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/Maintext1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Auto"
+            android:textColor="@color/background_material_light"
+            android:lines="1"
+            android:textSize="70dp"/>
+
+        <TextView
+            android:id="@+id/Maintext2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Diary"
+            android:textColor="@color/background_material_light"
+            android:lines="1"
+            android:textSize="70dp"/>
+
+        <TextView
+            android:id="@+id/Maintext3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="세상에서 가장 간단한 다이어리"
+            android:textColor="@color/background_material_light"
+            android:lines="1"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+        android:id="@+id/startBtn"
+        android:layout_gravity="center_horizontal|center"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_width="225dp"
+        android:layout_height="50dp"
+        android:background="@drawable/default_btn1" />
+
+        <Button
+            android:id="@+id/listBtn"
+            android:layout_gravity="center_horizontal|center"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="25dp"
+            android:layout_width="225dp"
+            android:layout_height="50dp"
+            android:background="@drawable/default_btn2" />
+
+    </LinearLayout>
+</LinearLayout>
